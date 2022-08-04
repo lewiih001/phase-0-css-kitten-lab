@@ -1,33 +1,33 @@
-html {
+html .parent-element{
   background: url(../images/beautiful-day.jpg) no-repeat top center;
 }
 
-img {
+img .child-element{
   position: relative;
   z-index: 11;
   cursor: pointer;
 }
 
-.wrapper {
+.wrapper .child-element{
   position: relative;
   width: 960px;
   height: 100vh;
   margin: 0 auto;
 }
 
-#wheelbarrow, #wheelbarrow-foreground {
+#wheelbarrow, #wheelbarrow-foreground .child-element {
   margin-left: 80px;
   width: 688px;
   height: 514px;
 }
 
-#wheelbarrow { 
+#wheelbarrow .child-element{ 
   position: relative;
   background: url(../images/wheelbarrow.png) no-repeat;
   z-index: 0;
   top: 220px;
 }
-#wheelbarrow-foreground {
+#wheelbarrow-foreground .child-element{
   pointer-events: none;
   position: absolute;
   background: url(../images/wheelbarrow-foreground.png) no-repeat;
@@ -35,6 +35,6 @@ img {
   top: 220px;
 }
 
-#basket, #ball {
+#basket, #ball .child-element {
   display: inline;
 }
